@@ -2,6 +2,9 @@
     background-color: black;
     border-radius: 30px;
 }
+.navbar li #logo{
+    font-weight: 900;
+}
 .navbar li{
     float:left;
     list-style: none; 
@@ -28,4 +31,79 @@
     float: right;
     color: white;
     padding: 12px 75px;
+}
+
+/* -----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+-------------------------------------footer-starts-from-here-----------------------------------------
+-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------- */
+div{
+    display: block;
+}
+#footer-section{
+    border: 1px solid;
+    background-color: black;
+}
+#main-footer{
+        background-color: var(--pharos-color-marble-gray-10);
+        color: var(--pharos-color-white);
+        padding: var(--pharos-spacing-2-x) var(--pharos-spacing-1-x);
+        display: grid;
+        grid-template-areas: ". main .";
+        grid-template-columns: 1fr 8fr 1fr;
+        align-content: space-around;
+}
+.footer-content{
+    grid-area: main / main / main / main;
+    max-width: 70rem;
+    justify-self: center;
+}
+.footer__row--top {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+/* @media only screen and (max-width: 570px) */
+/* constructed stylesheet */
+.footer__row--main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+/* @media (max-width: 1024px) */
+/* constructed stylesheet */
+.footer__row--main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 0px;
+}
+/* constructed stylesheet */
+.footer__row--main {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1.25fr 1.75fr;
+    grid-template-rows: auto;
+    column-gap: var(--pharos-spacing-one-half-x);
+}
+/* constructed stylesheet */
+.footer__row {
+    display: grid;
+}
+.footer-p1 ul{
+    display: grid;
+    overflow: auto;
+    justify-content: space-evenly;
+}
+.footer-p1 li{
+    margin: 4px 15px;
+}
+.footer-p1 li a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    font-size: 20px;
+}
+
+/* constructed stylesheet */
+.footer__row {
+    display: grid;
 }
